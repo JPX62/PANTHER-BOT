@@ -40,6 +40,14 @@
             "description": "Pyrogram String Session",
             "required": true
         }
+        "LOG_CHAT": {
+            "description": "Your log id , get it from your private group",
+            "required": true
+        },
+        "BOT_TOKEN": {
+            "description": "Your not token for help menu",
+            "required": true
+        },
     },
     "addons": [],
     "buildpacks": [
