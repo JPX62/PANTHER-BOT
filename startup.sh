@@ -1,24 +1,24 @@
 #!/usr/bin/bash
 
 echo "
-============ Nexa Userbot ============
+============ Panther Userbot ============
 
 Starting Now...
 
-Copyright (c) 2021 ThePro-CoderZ | @TheArjvps
+Copyright (c) 2021 kaal0408 | @Panthersupport
 "
 
-start_nexaub () {
+start_panther () {
     if [[ -z "$PYRO_STR_SESSION" ]]
     then
 	    echo "Please add Pyrogram String Session"
     else
-	    python3 -m nexa_userbot
+	    python3 -m panther
     fi
   }
 
-_install_nexaub () {
-    start_nexaub
+_install_panther () {
+    start_panther
   }
 
-_install_nexaub
+_install_panther
