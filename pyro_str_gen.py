@@ -16,7 +16,7 @@ async def pyro_str():
     async with Client(":memory:", api_id, api_hash) as PantherUB:
         pyro_session = await PantherUB.export_session_string()
         session_msg = await PantherUB.send_message("me", f"`{pyro_session}`")
-        await session_msg.reply_text("Successfully Generated String Session! Thanks for trying [Panther Userbot](https://github.com/kaal0408/Panther-Userbot) \n\n**Join @Panthersupport**", disable_web_page_preview=True)
+        await session_msg.reply_text("Successfully Generated String Session! Thanks for trying [Panther Userbot](https://github.com/kaal0408/Panther) \n\n**Join @Panthersupport**", disable_web_page_preview=True)
         print("\nString Session has been sent to your saved messages. Please check it. Thank You!\n")
 
 if __name__ == "__main__":
