@@ -1,15 +1,15 @@
 {
-    "name": "Nexa Userbot",
+    "name": "Panther Userbot",
     "description": "Simple and Light Weight Pyrogram Userbot",
-    "logo": "https://telegra.ph/file/a2471aa31028b2c429390.jpg",
+    "logo": "https://telegra.ph/file/a92d3b0d316bb6bfb6839.jpg",
     "keywords": [
-        "Akki_Pro",
+        "Manjeet",
         "Telegram Bot",
-        "nexa"
+        "panther"
     ],
-    "website": "https://t.me/TheArjvps",
-    "repository": "https://github.com/ThePro-CoderZ/Nexa-Userbot",
-    "success_url": "https://t.me/TheArjvpsChat",
+    "website": "https://t.me/Panthersupport",
+    "repository": "https://github.com/kaal0408/Panther",
+    "success_url": "https://t.me/Panthersupport",
     "env": {
         "APP_ID": {
             "description": "Your APP_ID from my.telegram.org",
