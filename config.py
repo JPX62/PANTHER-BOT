@@ -1,5 +1,3 @@
-# Copyright (c) 2021 ThePro-CoderZ
-# Part of: Nexa-Userbot
 
 import os
 
@@ -12,3 +10,5 @@ class Config(object):
     MONGODB_URL = os.environ.get("MONGODB_URL")
     HEROKU_APP_NAME = os.environ.get("HEROKU_APP_NAME")
     HEROKU_API_KEY = os.environ.get("HEROKU_API_KEY")
+    LOG_CHAT = int(os.getenv("LOG_CHAT"))
+    BOT_TOKEN = os.getenv("BOT_TOKEN")
