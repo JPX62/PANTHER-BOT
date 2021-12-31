@@ -1,17 +1,10 @@
-# Copyright (C) 2020-2021 by okay-retard@Github, < https://github.com/okay-retard >.
-#
-# This file is part of < https://github.com/okay-retard/ZectUserBot > project,
-# and is released under the "GNU v3.0 License Agreement".
-# Please see < https://github.com/okay-retard/ZectUserBot/blob/master/LICENSE >
-#
-# All rights reserved.
 
 from config import PREFIX
 import asyncio
 import time
 from datetime import datetime
 from pyrogram import filters
-from Zect import app, StartTime, CMD_HELP
+from Panther import app, StartTime, CMD_HELP
 from sys import version_info
 
 from pyrogram import __version__ as __pyro_version__
@@ -63,12 +56,12 @@ def get_readable_time(seconds: int) -> str:
 async def alive(_, m):
     start_time = time.time()
     uptime = get_readable_time((time.time() - StartTime))
-    reply_msg = f"**[Zect](https://github.com/okay-retard/ZectUserBot)**\n"
+    reply_msg = f"**[Panther](https://github.com/kaal0408/Panther)**\n"
     reply_msg += f"__Python__: `{__python_version__}`\n"
     reply_msg += f"__@Pyrogram version__: `{__pyro_version__}`\n"
     end_time = time.time()
-    reply_msg += f"__Zect uptime__: {uptime}"
-    photo = "https://telegra.ph//file/dcd069c3eb26c9fa3011d.jpg"
+    reply_msg += f"__Panther uptime__: {uptime}"
+    photo = "https://telegra.ph/file/a92d3b0d316bb6bfb6839.jpg"
     await m.delete()
     if m.reply_to_message:
         await app.send_photo(
