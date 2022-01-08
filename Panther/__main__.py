@@ -3,7 +3,7 @@ from pyrogram import idle, Client, filters
 from config import PREFIX
 from Panther import app, LOGGER
 import logging
-from Zect.modules import *
+from Panther.modules import *
 
 app.start()
 me = app.get_me()
