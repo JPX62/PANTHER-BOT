@@ -1,1 +1,1 @@
-worker: python3 -m Hustle
+worker: python3 -m Pantherbot
