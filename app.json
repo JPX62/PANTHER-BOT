@@ -10,7 +10,7 @@
       "description": "Get this value from my.telegram.org.",
       "required": true
     },
-"BOT_TOKEN": {
+    "BOT_TOKEN": {
     "description": "Your Bot Token get from @Botfather ",
     "value": ""
     "required": true
