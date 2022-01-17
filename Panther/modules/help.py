@@ -37,3 +37,36 @@ async def help(client, message):
             return
         else:
             await message.edit(module_help)
+
+@app_on_cmd(
+    ["help", "helper"],
+    cmd_help={
+        "help": "Gets Help Menu",
+        "example": "{ch}help",
+    },
+)
+async def help(client, message):
+    engine = message.Engine
+    f_ = await edit_or_reply(message, engine.get_string("PROCESSING"))
+    if bot:
+        starkbot = bot.me
+        bot_username = starkbot.username
+        try:
+            nice = await client.get_inline_bot_results(bot=bot_username, query="help")
+            await client.send_inline_bot_result(
+                message.chat.id, nice.query_id, nice.results[0].id, hide_via=True
+            )
+        except BaseException as e:
+            return await f_.edit(engine.get_string("HELP_OPEN_ERROR").format(e))
+        await f_.delete()
+    else:
+        cmd_ = get_text(message)
+        if not cmd_:
+            help_t = prepare_cmd_list(engine)            
+            await f_.edit(help_t)
+        else:
+            help_s = get_help_str(cmd_)
+            if not help_s:
+                await f_.edit(engine.get_string("PLUGIN_NOT_FOUND"))
+                return
+            await f_.edit(help_s)
