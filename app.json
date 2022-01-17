@@ -12,12 +12,10 @@
     },
     "BOT_TOKEN": {
     "description": "Your Bot Token get from @Botfather ",
-    "value": ""
     "required": true
   },
   "BOT_USERNAME": {
     "description": "Your bot username with '@' get from @BotFather",
-    "value": ""
     "required": true
   },
 
