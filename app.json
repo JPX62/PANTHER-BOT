@@ -10,6 +10,17 @@
       "description": "Get this value from my.telegram.org.",
       "required": true
     },
+"BOT_TOKEN": {
+    "description": "Your Bot Token get from @Botfather ",
+    "value": ""
+    "required": true
+  },
+  "BOT_USERNAME": {
+    "description": "Your bot username with '@' get from @BotFather",
+    "value": ""
+    "required": true
+  },
+
     "SESSION": {
       "description": "Get this value by running [python3 mysession.py] in Termux or local system.",
       "required": true
